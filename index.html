@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Indie+Flower&family=Open+Sans:ital,wght@0,300;0,700;1,600&family=Roboto:ital,wght@0,300;0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="./assets/Rick-and-Morty-768x432.png" alt="Rick and Morty"></a>
+        <ul id="menu-filter">
+            <li id="todos">TODOS</li>
+            <li id="mujeres">MUJER</li>
+            <li id="hombres">HOMBRE</li>
+            <li id="sin-genero">SIN GENERO</li>
+            <li id="no-se-sabe">NO SE SABE</li>
+        </ul>
+        <div id="filter">Filtros</div>    
+    </nav>
+    <main>
+        <p class="total-p">Total de Personajes: <span id="totalPersonajes"></span></p>
+        <div class="personajes-container" id="root"></div>
+        <div class="container-paginador">
+            <p>Pagina actual: <span id="pagina-actual"></span></p>
+            <p>Total de paginas: <span id="total-paginas"></span></p>
+            <div class="pagination">
+                <button id="first-page"><i class="fa-solid fa-angles-left"></i></button>
+                <button id="prev-page"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="next-page"><i class="fa-solid fa-angle-right"></i></button>
+                <button id="last-page"><i class="fa-solid fa-angles-right"></i></button>
+            </div>
+        </div>
+
+    </main>
+    <script src="app.js"></script>
+    <footer>
+        <div class="copyright">
+            <p>© 2023 Copyright Pablo Facio</p>
+        </div>
+        <div class="redes">
+            <ul>
+                <li><a class="icon" href="https://www.wa.link/b5p2b7" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a class="icon" href="mailto:pablo@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+                <li><a class="icon" href="https://www.linkedin.com/in/pablo-facio-706a01160/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+       
+    </footer>
+</body>
+</html>
